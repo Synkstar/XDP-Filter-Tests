@@ -1,5 +1,5 @@
 ## XDP Filter tests
-A basic stateless xdp program that does ratelimiting, has filtering for common reflection attacks including dns and ntp reflection.
+A basic stateless xdp program that does ratelimiting and has filtering for common reflection attacks including dns and ntp reflection.
 This was something I did to mess around and thought it could be a good learning resource for someone interested in learning how to do ratelimiting etc.
 
 ### Compiling and installing the program
