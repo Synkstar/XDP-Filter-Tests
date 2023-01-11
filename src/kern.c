@@ -387,11 +387,6 @@ int xdp_filter(struct xdp_md *ctx) {
                 return XDP_DROP;
             }
 
-            // block udp traffic with invalid checksums
-            if(udph->check == 0) {
-                return XDP_DROP;
-            }
-
             // Strict rate limit from ports of services commonly used for reflections
             if(udph->source == htons(17) || udph->source == htons(19) || udph->source == htons(53) || udph->source == htons(123) || udph->source == htons(161) || udph->source == htons(389) || udph->source == htons(1900) || udph->source == htons(9987) || udph->source == htons(111) || udph->source == htons(80) || udph->source == htons(443)) {
                 ratelimit_client(iph->saddr,now,60,100);
