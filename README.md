@@ -4,14 +4,13 @@ This was something I did to mess around and thought it could be a good learning 
 
 ### Compiling and installing the program
 ```bash
-# install dependancies
-
+# Install dependencies
 sudo apt install build-essential make clang llvm m4 libpcap-dev libelf-dev gcc-multilib cmake
 
-# Clone repo and submodules
+# Clone the repo and its submodules
 git clone https://github.com/Synkstar/XDP-FIlter-Tests/xdp-filter-tests.git --recursive
 
-# Change to project directory
+# Change to the projects directory
 cd xdp-filter-tests
 
 # Compile the program
@@ -25,6 +24,5 @@ make install
 This program also creates a service file that you could use but I doubt anyone would want to use this program on a production system.
 ```bash
 # Start command
-
 xdpfilterstest -i {interface}
 ```
