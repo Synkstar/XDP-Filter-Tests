@@ -1,0 +1,11 @@
+[Unit]
+Description=XDP Filters Test.
+After=network-online.target
+Requires=network-online.target
+
+[Service]
+ExecStart=/usr/bin/xdpfilterstest --i ens18
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
