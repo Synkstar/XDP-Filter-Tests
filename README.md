@@ -8,7 +8,7 @@ This was something I did to mess around and thought it could be a good learning 
 sudo apt install build-essential make clang llvm m4 libpcap-dev libelf-dev gcc-multilib cmake
 
 # Clone the repo and its submodules
-git clone https://github.com/Synkstar/XDP-FIlter-Tests/xdp-filter-tests.git --recursive
+git clone https://github.com/Synkstar/XDP-Filter-Tests/xdp-filter-tests.git --recursive
 
 # Change to the projects directory
 cd xdp-filter-tests
